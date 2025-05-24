@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    overflow: hidden; /* To prevent scrollbars from canvas */
+}
+
+#gameCanvas {
+    display: block; /* To remove potential bottom margin */
+}
+
+#distanceDisplay {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    z-index: 100; /* Will be below mainMenu */
+}
+
+#mainMenu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 200; /* Above other UI elements */
+    color: white;
+    text-align: center;
+}
+
+#mainMenu h1 {
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
+#mainMenu button {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    transition: background-color 0.3s;
+}
+
+#mainMenu button:hover {
+    background-color: #45a049; /* Darker green */
+}
